@@ -1,0 +1,118 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+#logo{ height:72px;
+    width: 70px;
+}
+li{  
+    display: inline-block;
+    padding:5px;
+    margin:3px;  
+    
+    
+}
+body{
+    animation-name: bg;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    background-size: contain;
+   
+    
+    
+}
+
+
+.navbar{
+    
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    background-color: brown;
+    padding: 5px;
+    font-size: 38px;
+    height:80px;
+    animation-name: change;
+    animation-duration: 5s;
+    cursor:pointer;
+    animation-iteration-count: infinite;
+    
+}
+.a{
+    text-decoration: none;
+    border: 2px double black;
+    padding: 3px;
+    text-align: center;
+}
+ul{
+    
+    list-style-type: none;
+    
+}
+.ser{
+    padding:15px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+.row{
+display:flex;
+justify-content: space-around;
+
+margin:10px;
+
+}
+p{
+    font-size: 20px;
+  
+}
+.container{
+ margin:2px;
+ border:1px solid black;
+ text-align: center;
+ border-radius: 5px;
+}
+
+.img{
+    width:50vh;
+    height:45vh;
+    object-fit: contain;
+}
+.btn
+{
+    padding:13px;
+    border:2px solid red;
+    cursor:pointer;
+    border-radius:5px;
+    font-weight: bolder;
+    background-color: aquamarine;
+}
+@keyframes change {
+    50%{
+        background-color: orange;
+    }
+    75%{
+        background-color: yellow;
+    }
+    80%{
+        background-color: green;
+    }
+    
+}
+@keyframes bg {
+    0%{
+        background-image: url(newbg.jpeg);
+    }
+    25%{
+        background-image: url(newbg-2.jpeg);
+    }
+    50%{
+        background-image: url(newbg-3.jpeg);
+    }
+    80%{
+        background-image: url(newbg-4.jpeg);
+    }
+}
